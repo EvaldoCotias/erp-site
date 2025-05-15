@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema ERP - Solução Completa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sistema ERP</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>O que é um ERP?</h2>
+    <p>ERP (Enterprise Resource Planning) é um sistema integrado de gestão empresarial que automatiza processos em finanças, estoque, vendas e mais.</p>
+  </section>
+
+  <section id="modulos" class="cards">
+    <h2>Módulos do Sistema</h2>
+    <div class="card" onclick="showDetails('Financeiro')">
+      <h3>Financeiro</h3>
+      <p>Controle de contas e fluxo de caixa.</p>
+    </div>
+    <div class="card" onclick="showDetails('Estoque')">
+      <h3>Estoque</h3>
+      <p>Gestão de inventário e produtos.</p>
+    </div>
+    <div class="card" onclick="showDetails('Vendas')">
+      <h3>Vendas</h3>
+      <p>Pedidos, clientes e faturamento.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form onsubmit="return false;">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea placeholder="Mensagem" required></textarea>
+      <button type="submit" onclick="alert('Mensagem enviada!')">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - ERP Demo - GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
